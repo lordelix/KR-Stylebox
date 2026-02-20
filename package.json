@@ -1,6 +1,6 @@
 {
   "name": "kr-stylebox",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "Klickrhein Stylebox",
   "main": "compiler.js",
   "scripts": {

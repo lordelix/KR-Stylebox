@@ -8,7 +8,7 @@
 @forward 'fontello-codes';
 
 :root {
-	@each $query, $size in variables.$mediaquery {
-		--#{$query}: #{$size};
-	}
+  @each $query, $size in variables.$mediaquery {
+    --#{$query}: #{$size};
+  }
 }

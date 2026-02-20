@@ -1,33 +1,33 @@
 :where(ul),
 :where(ol) {
-	margin: 0;
-	padding: 0;
-	list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 ul.--disc,
 ul.--dash {
-	padding-left: 1rem;
-	margin-left: 0.75rem;
+  padding-left: 1rem;
+  margin-left: 0.75rem;
 
-	&.--dash > li,
-	&.--disc > li {
-		&::marker {
-			display: none;
-		}
+  &.--dash > li,
+  &.--disc > li {
+    &::marker {
+      display: none;
+    }
 
-		&::before {
-			content: '-';
-			transform: translateX(-1rem);
-			position: absolute;
-		}
-	}
+    &::before {
+      content: '-';
+      transform: translateX(-1rem);
+      position: absolute;
+    }
+  }
 
-	&.--dash > li::before {
-		content: '-';
-	}
+  &.--dash > li::before {
+    content: '-';
+  }
 
-	&.--disc > li::before {
-		content: '•';
-	}
+  &.--disc > li::before {
+    content: '•';
+  }
 }
