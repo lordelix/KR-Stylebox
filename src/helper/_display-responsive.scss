@@ -1,0 +1,17 @@
+@use '../variables';
+
+@each $size, $query in variables.$mediaquery {
+  @media #{$query} {
+    .\$hidden\@#{$size}.\$hidden\@#{$size} {
+      display: none;
+    }
+
+    .\$block\@#{$size}.\$block\@#{$size} {
+      display: block;
+    }
+
+    .\$inline-block\@#{$size}.\$inline-block\@#{$size} {
+      display: inline-block;
+    }
+  }
+}

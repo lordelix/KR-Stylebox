@@ -1,0 +1,25 @@
+@use '../variables';
+
+@each $size, $query in variables.$mediaquery {
+  @media #{$query} {
+    .\$pointer\@#{$size}.\$pointer\@#{$size} {
+      cursor: pointer;
+    }
+
+    .\$float-left\@#{$size}.\$float-left\@#{$size} {
+      float: left;
+    }
+
+    .\$float-right\@#{$size}.\$float-right\@#{$size} {
+      float: right;
+    }
+
+    .\$w-full\@#{$size}.\$w-full\@#{$size} {
+      width: 100%;
+    }
+
+    .\$w-fit-content\@#{$size}.\$w-fit-content\@#{$size} {
+      width: fit-content;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+@use '../variables';
+
+@each $size, $query in variables.$mediaquery {
+  @media #{$query} {
+    .\$relative\@#{$size}.\$relative\@#{$size} {
+      position: relative;
+    }
+
+    .\$absolute\@#{$size}.\$absolute\@#{$size} {
+      position: absolute;
+    }
+
+    .\$absolute-center\@#{$size}.\$absolute-center\@#{$size} {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .\$fixed\@#{$size}.\$fixed\@#{$size} {
+      position: fixed;
+    }
+
+    .\$sticky\@#{$size}.\$sticky\@#{$size} {
+      position: sticky;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+@use '../variables';
+
+@each $size, $query in variables.$mediaquery {
+  @media #{$query} {
+    .\$decoration-underline\@#{$size}.\$decoration-underline\@#{$size} {
+      text-decoration: underline;
+    }
+
+    .\$decoration-double-underline\@#{$size}.\$decoration-double-underline\@#{$size} {
+      text-decoration: underline;
+      text-decoration-style: double;
+    }
+
+    .\$decoration-none\@#{$size}.\$decoration-none\@#{$size} {
+      text-decoration: none;
+    }
+
+    .\$text-center\@#{$size}.\$text-center\@#{$size} {
+      text-align: center;
+    }
+
+    .\$text-left\@#{$size}.\$text-left\@#{$size} {
+      text-align: left;
+    }
+
+    .\$text-right\@#{$size}.\$text-right\@#{$size} {
+      text-align: right;
+    }
+
+    .\$overflow-ellipsis\@#{$size}.\$overflow-ellipsis\@#{$size} {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  }
+}

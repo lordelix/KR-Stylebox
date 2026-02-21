@@ -1,9 +1,23 @@
+@forward 'helper/display-responsive';
 @forward 'helper/display';
-@forward 'helper/flex.responsive';
+
+@forward 'helper/flex-responsive';
 @forward 'helper/flex';
+
+@forward 'helper/font-responsive';
 @forward 'helper/font';
+
+@forward 'helper/margin-responsive';
 @forward 'helper/margin';
+
+@forward 'helper/misc-responsive';
 @forward 'helper/misc';
+
+@forward 'helper/padding-responsive';
 @forward 'helper/padding';
+
+@forward 'helper/position-responsive';
 @forward 'helper/position';
+
+@forward 'helper/text-responsive';
 @forward 'helper/text';

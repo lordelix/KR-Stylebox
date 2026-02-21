@@ -1,5 +1,3 @@
-@use '../variables';
-
 .\$hidden.\$hidden {
   display: none;
 }
@@ -10,15 +8,4 @@
 
 .\$inline-block.\$inline-block {
   display: inline-block;
-}
-
-@each $size, $query in variables.$mediaquery {
-  @media #{$query} {
-    .\$hidden\@#{$size}.\$hidden\@#{$size} {
-      display: none;
-    }
-    .\$block\@#{$size}.\$block\@#{$size} {
-      display: block;
-    }
-  }
 }

@@ -1,0 +1,33 @@
+@use '../variables';
+
+@each $size, $query in variables.$mediaquery {
+  @media #{$query} {
+    .\$font-small\@#{$size}.\$font-small\@#{$size} {
+      font-size: 0.875rem;
+      line-height: 1.45rem;
+    }
+
+    .\$font-smaller\@#{$size}.\$font-smaller\@#{$size} {
+      font-size: 0.75rem;
+      line-height: 1.45rem;
+    }
+
+    .\$font-large\@#{$size}.\$font-large\@#{$size} {
+      font-size: 1.125rem;
+      line-height: 1.85rem;
+    }
+
+    .\$font-larger\@#{$size}.\$font-larger\@#{$size} {
+      font-size: 1.25rem;
+      line-height: 2rem;
+    }
+
+    .\$font-bold\@#{$size}.\$font-bold\@#{$size} {
+      font-weight: 600;
+    }
+
+    .\$font-italic\@#{$size}.\$font-italic\@#{$size} {
+      font-style: italic;
+    }
+  }
+}

@@ -1,0 +1,75 @@
+@use '../variables';
+
+@each $size, $query in variables.$mediaquery {
+  @media #{$query} {
+    .\$m\@#{$size}.\$m\@#{$size} {
+      margin: 1rem;
+    }
+
+    .\$mt\@#{$size}.\$mt\@#{$size} {
+      margin-top: 1rem;
+    }
+
+    .\$mr\@#{$size}.\$mr\@#{$size} {
+      margin-right: 1rem;
+    }
+
+    .\$mb\@#{$size}.\$mb\@#{$size} {
+      margin-bottom: 1rem;
+    }
+
+    .\$ml\@#{$size}.\$ml\@#{$size} {
+      margin-left: 1rem;
+    }
+
+    .\$mx\@#{$size}.\$mx\@#{$size} {
+      margin: {
+        left: 1rem;
+        right: 1rem;
+      }
+    }
+
+    .\$my\@#{$size}.\$my\@#{$size} {
+      margin: {
+        top: 1rem;
+        bottom: 1rem;
+      }
+    }
+
+    @each $a, $b in variables.$spacing {
+      .\$m-#{$a}\@#{$size}.\$m-#{$a}\@#{$size} {
+        margin: $b;
+      }
+
+      .\$mt-#{$a}\@#{$size}.\$mt-#{$a}\@#{$size} {
+        margin-top: $b;
+      }
+
+      .\$mr-#{$a}\@#{$size}.\$mr-#{$a}\@#{$size} {
+        margin-right: $b;
+      }
+
+      .\$mb-#{$a}\@#{$size}.\$mb-#{$a}\@#{$size} {
+        margin-bottom: $b;
+      }
+
+      .\$ml-#{$a}\@#{$size}.\$ml-#{$a}\@#{$size} {
+        margin-left: $b;
+      }
+
+      .\$mx-#{$a}\@#{$size}.\$mx-#{$a}\@#{$size} {
+        margin: {
+          left: $b;
+          right: $b;
+        }
+      }
+
+      .\$my-#{$a}\@#{$size}.\$my-#{$a}\@#{$size} {
+        margin: {
+          top: $b;
+          bottom: $b;
+        }
+      }
+    }
+  }
+}
