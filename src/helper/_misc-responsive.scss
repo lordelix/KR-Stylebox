@@ -21,5 +21,9 @@
     .\$w-fit-content\@#{$size}.\$w-fit-content\@#{$size} {
       width: fit-content;
     }
+
+    .\$whitespace-nowrap\@#{$size}.\$whitespace-nowrap\@#{$size} {
+      white-space: nowrap;
+    }
   }
 }
