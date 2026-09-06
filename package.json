@@ -4,12 +4,13 @@
   "description": "Klickrhein Stylebox",
   "main": "compiler.js",
   "scripts": {
+    "update": "npx npm-check-updates",
     "build": "node ./compiler.js"
   },
   "keywords": [],
   "author": "Felix Heidecke",
   "license": "ISC",
   "devDependencies": {
-    "sass": "1.84.0"
+    "sass": "1.104.0"
   }
 }
