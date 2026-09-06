@@ -1,11 +1,14 @@
 {
   "name": "kr-stylebox",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "Klickrhein Stylebox",
   "main": "compiler.js",
   "scripts": {
     "update": "npx npm-check-updates",
-    "build": "node ./compiler.js"
+    "build": "node ./compiler.js",
+    "version:patch": "npm version patch --no-git-tag-version",
+    "version:minor": "npm version minor --no-git-tag-version",
+    "version:major": "npm version major --no-git-tag-version"
   },
   "keywords": [],
   "author": "Felix Heidecke",
